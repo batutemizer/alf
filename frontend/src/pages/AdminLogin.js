@@ -16,7 +16,7 @@ const AdminLogin = ({ onLogin }) => {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://192.168.2.179:5000/api/admin/login', { password });
+      const res = await axios.post('https://alf-uenk.onrender.com/api/admin/login', { password });
       if (res.data.success) {
         onLogin();
       }

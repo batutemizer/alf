@@ -17,8 +17,8 @@ const AdminPanel = () => {
     setLoading(true);
     try {
       const [att, nonAtt] = await Promise.all([
-        axios.get('http://192.168.2.179:5000/api/attendance/list', { params: { date: today(), time_slot: timeSlot } }),
-        axios.get('http://192.168.2.179:5000/api/attendance/nonattendees', { params: { date: today(), time_slot: timeSlot } })
+        axios.get('https://alf-uenk.onrender.com/api/attendance/list', { params: { date: today(), time_slot: timeSlot } }),
+        axios.get('https://alf-uenk.onrender.com/api/attendance/nonattendees', { params: { date: today(), time_slot: timeSlot } })
       ]);
       setAttendees(att.data.data || []);
       setNonAttendees(nonAtt.data.data || []);

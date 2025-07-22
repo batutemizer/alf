@@ -28,7 +28,7 @@ const AttendancePage = () => {
     setMessage('');
     setSuccess(false);
     try {
-      const res = await axios.post('http://192.168.2.179:5000/api/attendance/take', {
+      const res = await axios.post('https://alf-uenk.onrender.com/api/attendance/take', {
         name,
         surname,
         device_id: getDeviceId(),

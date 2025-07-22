@@ -28,7 +28,7 @@ const AddStudent = () => {
     setMessage('');
     setSuccess(false);
     try {
-      const res = await axios.post('http://192.168.2.179:5000/api/student/add', {
+      const res = await axios.post('https://alf-uenk.onrender.com/api/student/add', {
         name,
         surname,
         parent_phone: parentPhone,
