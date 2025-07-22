@@ -15,6 +15,7 @@ app.use(cors({
   origin: ['https://www.softnix.xyz', 'http://www.softnix.xyz'],
   credentials: true
 }));
+app.options('*', cors());
 app.use(bodyParser.json());
 
 // Veritabanı bağlantısı
