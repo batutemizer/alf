@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  color: #222;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  border-radius: 16px;
+  margin: 24px auto 32px auto;
+  max-width: 600px;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+nav button {
+  background: #f0f4fa;
+  border: none;
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(26,35,126,0.04);
+}
+nav button:hover, nav button:focus {
+  background: #1a237e;
+  color: #fff;
+}
+
+h2, h3 {
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 16px;
+}
+
+.card, .panel, .form-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(26,35,126,0.08);
+  padding: 32px 24px;
+  margin: 32px auto;
+  max-width: 420px;
+}
+
+form label {
+  font-weight: 600;
+  color: #1a237e;
+  margin-bottom: 4px;
+  display: block;
+}
+form input, form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #e3e7ef;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  background: #f7f9fb;
+  transition: border 0.2s;
+}
+form input:focus, form select:focus {
+  border: 1.5px solid #1a237e;
+  outline: none;
+}
+form button {
+  width: 100%;
+  background: linear-gradient(90deg, #1a237e 60%, #00bfae 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0,191,174,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+form button:hover, form button:focus {
+  background: linear-gradient(90deg, #00bfae 0%, #1a237e 100%);
+  box-shadow: 0 4px 16px 0 rgba(0,191,174,0.16);
+}
+
+@media (max-width: 600px) {
+  .card, .panel, .form-card {
+    padding: 18px 6px;
+    margin: 16px 4px;
+    max-width: 98vw;
+  }
+  nav {
+    max-width: 98vw;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Başarı ve hata mesajları */
+.success {
+  color: #00bfae;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.error {
+  color: #e53935;
+  font-weight: 600;
+  margin-top: 16px;
+}
