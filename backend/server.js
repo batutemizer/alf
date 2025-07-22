@@ -1,3 +1,4 @@
+console.log("Deploy test: " + new Date());
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
